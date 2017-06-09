@@ -1,0 +1,101 @@
+
+/* 
+iphone 4 - 6+, most android devices
+min-device-width:320px
+min-device-height:480px
+max-device-width:414px
+max-device-height:736px
+min-device-pixel-ratio:2
+ps:6+,device-pixel-ratio:3
+
+ipad
+device-width:768px
+device-height:1024px
+max-device-pixel-ratio:2
+ps:ipad mini, ipad1, ipad2, device-pixel-ratio:1
+
+others devices
+min-device-width:800px
+max-device-width:960px
+
+laptop
+min-device-width:1024px
+ */
+
+@media screen
+	and (min-device-width:320px),
+	and (min-device-height:480px),
+	and (max-device-width:414px),
+	and (max-device-height:736px) {
+		@media screen
+		and (-webkit-min-device-pixel-ratio: 2),
+		and (min--moz-device-pixel-ratio: 2),
+		and (-o-min-device-pixel-ratio: 2/1),
+		and (min-device-pixel-ratio: 2) {
+			html {
+				font-size:-o-calc(63% * 1.1);
+				font-size:-moz-calc(63% * 1.1);
+				font-size:-webkit-calc(63% * 1.1);
+				font-size:calc(63% * 1.1);
+			}
+		}
+		@media screen
+		and (-webkit-min-device-pixel-ratio: 3),
+		and (min--moz-device-pixel-ratio: 3),
+		and (-o-min-device-pixel-ratio: 3/1),
+		and (min-device-pixel-ratio: 3) {
+			html {
+				font-size:-o-calc(63% * 1.2);
+				font-size:-moz-calc(63% * 1.2);
+				font-size:-webkit-calc(63% * 1.2);
+				font-size:calc(63% * 1.2);
+			}
+		}
+}
+
+@media screen
+	and (device-width:768px),
+	and (device-height:1024px),
+	and (-webkit-min-device-pixel-ratio: 2),
+	and (min--moz-device-pixel-ratio: 2),
+	and (-o-min-device-pixel-ratio: 2/1),
+	and (min-device-pixel-ratio: 2)	{
+		html {
+			font-size:-o-calc(63% * 1.2);
+			font-size:-moz-calc(63% * 1.2);
+			font-size:-webkit-calc(63% * 1.2);
+			font-size:calc(63% * 1.2);
+		}
+}
+
+@media screen
+	and (min-width:1024px),
+	and (max-width:1279px) {
+		html {
+			font-size:-o-calc(63% * 1.3);
+			font-size:-moz-calc(63% * 1.3);
+			font-size:-webkit-calc(63% * 1.3);
+			font-size:calc(63% * 1.3);
+		}
+}
+
+@media screen
+	and (min-width:1280px),
+	and (max-width:1365px) {
+		html {
+			font-size:-o-calc(63% * (1280 / 1024) * 1.4);
+			font-size:-moz-calc(63% * (1280 / 1024) * 1.4);
+			font-size:-webkit-calc(63% * (1280 / 1024) * 1.4);
+			font-size:calc(63% * (1280 / 1024) * 1.4);
+		}
+}
+
+@media screen
+	and (min-width:1366px) {
+		html {
+			font-size:-o-calc(63% * (1366 / 1024));
+			font-size:-moz-calc(63% * (1366 / 1024));
+			font-size:-webkit-calc(63% * (1366 / 1024));
+			font-size:calc(63% * (1366 / 1024));
+		}
+}

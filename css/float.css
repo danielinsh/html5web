@@ -1,0 +1,55 @@
+@charset "utf-8";
+@media screen and (max-width:1024px) {
+	.datalisttable table caption {
+		/* background:rgba(251,251,251,1); */
+	}
+	.datalisttable table thead {
+		/* display:none; */
+	}
+	.datalisttable table tbody tr td {
+		flex-wrap:wrap;
+	}
+	.datalisttable table tbody tr td span {
+		float:left;
+		flex:none;
+		width:50%;
+		max-width:50%;
+		box-sizing:border-box;
+		margin:0;
+		padding:0;
+	}
+	.datalisttable table tbody tr td span:before {
+		padding-right:.5rem;
+		color:rgba(50,50,50,1);
+	}
+	.datalisttable table tbody tr td:hover span:before {
+		color:rgba(255,255,255,1);
+	}
+	.datalisttable table tbody tr td:hover a,
+	.datalisttable table tbody tr td:hover a:link,
+	.datalisttable table tbody tr td:active a,
+	.datalisttable table tbody tr td:active a:link {
+		color:rgba(0,0,255,1);
+	}
+	.datalisttable table tbody tr td span:before { content:attr(data-title)":"; }
+	
+	.iframe .approvaltable tr td span {
+		white-space:nowrap;
+	}
+	.iframe .approvaltable td span:last-child {
+		width:100%;
+		min-width:100%;
+		max-width:100%;
+		text-align:left;
+	}
+
+}
+
+@media screen and (max-device-width:320px) {
+	html:after {
+		content:'';
+	}
+	article ul li p {
+		font-size:50%;
+	}
+}
