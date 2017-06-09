@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no"/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/media.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/float.css" />
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/DatePicker/WdatePicker.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/common.js"></script>
+<title>框架</title>
+<script>
+$(document).ready(function(){
+	setMenu('dashboard',101);
+});
+</script>
+</head>
+
+<body class="">
+
+<aside>
+	<section>
+		<ul>
+			<li>
+				<figure>
+				<img src="images/logo.png" />
+				<figcaption>
+					科匠中国信息管理系统 V2.0
+				</figcaption>
+				</figure>
+			</li>
+			<li>
+				<hgroup>
+					<h3 data-name="dashboard">
+						<i class="fa fa-dashboard"></i>
+						OA
+						<i class="fa fa-angle-right"></i>
+					</h3>
+					<h4 data-name="dashboard_101">
+						<i class="fa fa-angle-right"></i>
+						业务申请
+					</h4>
+					<h4 data-name="dashboard_102">
+						<i class="fa fa-angle-right"></i>
+						开票流程
+					</h4>
+					<h3 data-name="laptop">
+						<i class="fa fa-laptop"></i>
+						报工
+						<i class="fa fa-angle-right"></i>
+					</h3>
+					<h3 data-name="money">
+						<i class="fa fa-money"></i>
+						收款管理
+						<i class="fa fa-angle-right"></i>
+					</h3>
+					<h3 data-name="hand-rock-o">
+						<i class="fa fa-hand-rock-o"></i>
+						合伙人中心
+						<i class="fa fa-angle-right"></i>
+					</h3>
+					<h3 data-name="database">
+						<i class="fa fa-database"></i>
+						经营分析系统
+						<i class="fa fa-angle-right"></i>
+					</h3>
+					<h4 data-name="database_101">
+						<i class="fa fa-angle-right"></i>
+						逾期未联系
+					</h4>
+					<h4 data-name="database_102">
+						<i class="fa fa-angle-right"></i>
+						成本统计
+					</h4>
+					<h4 data-name="database_103">
+						<i class="fa fa-angle-right"></i>
+						事业部业绩统计
+					</h4>
+					<h4 data-name="database_104">
+						<i class="fa fa-angle-right"></i>
+						业务管理中心业绩统计
+					</h4>
+					<h4 data-name="database_105">
+						<i class="fa fa-angle-right"></i>
+						项目分析
+					</h4>
+					<h4 data-name="database_106">
+						<i class="fa fa-angle-right"></i>
+						确认收入分析
+					</h4>
+					<h4 data-name="database_107">
+						<i class="fa fa-angle-right"></i>
+						经营分析
+					</h4>
+					<h4 data-name="database_108">
+						<i class="fa fa-angle-right"></i>
+						事业部总体分析
+					</h4>
+					<h3 data-name="area-chart">
+						<i class="fa fa-area-chart"></i>
+						统计分析
+						<i class="fa fa-angle-right"></i>
+					</h3>
+					<h4 data-name="area-chart_101">
+						<i class="fa fa-angle-right"></i>
+						售前工时（按项目）
+					</h4>
+					<h4 data-name="area-chart_102">
+						<i class="fa fa-angle-right"></i>
+						工时汇总（按人）
+					</h4>
+					<h4 data-name="area-chart_103">
+						<i class="fa fa-angle-right"></i>
+						工时清单（按人）
+					</h4>
+					<h4 data-name="area-chart_104">
+						<i class="fa fa-angle-right"></i>
+						工时清单（按项目）
+					</h4>
+				</hgroup>
+			</li>
+		</ul>
+	</section>
+</aside>
+
+<div id="main">
+	<header>
+		<section>
+			<ul>
+				<li>
+					<i class="fa fa-bars"></i>
+				</li>
+				<li>
+					<div class="smarticker">
+						<a href="#">1互联网+环保新时代 给你的旧手机找一个新家1</a>
+						<a href="#">2互联网+环保新时代 给你的旧手机找一个新家2</a>
+						<a href="#">3互联网+环保新时代 给你的旧手机找一个新家3</a>
+						<a href="#">4互联网+环保新时代 给你的旧手机找一个新家4</a>
+						<a href="#">5互联网+环保新时代 给你的旧手机找一个新家5</a>
+					</div>
+				</li>
+				<li>
+					<i class="fa fa-bell">
+						<sup>8</sup>
+					</i>
+				</li>
+				<li>
+					<i class="fa fa-envelope">
+						<sup>18</sup>
+					</i>
+				</li>
+				<li>
+					<i class="fa fa-tasks">
+						<sup>9+</sup>
+					</i>
+				</li>
+				<li>
+					<i class="fa fa-power-off"></i>
+				</li>
+				<div class="clear"></div>
+			</ul>
+	</header>
+	<article>
+		<section>
+			<summary>
+				<p>这里放提示语！</p>
+				<form>
+                	<input type="text" id="firmname" placeholder="公司名称" />
+                    <input type="text" class="short" id="clueclientphone" placeholder="客户电话" />
+                    <input type="text" class="mid" id="cluetitle" placeholder="项目主题" />
+                	<input type="text" id="cluebelonganame" placeholder="隶属人" />
+                    <input type="text" id="clueaname" placeholder="创建人" />
+                    <input type="text" id="startcluecreatetime" placeholder="创建开始时间" class="mid" onclick="WdatePicker()" />
+                    <input type="text" id="endcluecreatetime" placeholder="创建结束时间" class="mid" onclick="WdatePicker()" />
+					<select id="firmfrom" class="short">
+						<option value=''>请下拉选择</option>
+						<optgroup label="公司来源"></optgroup>
+						<option value='1'>400电话</option>
+						<option value='2'>QQ</option>
+						<option value='3'>老的CRM系统</option>
+						<optgroup label="其他来源"></optgroup>
+						<option value='4'>自筹客户</option>
+						<option value='1000'>其他</option>
+					</select>
+                	<input type="text" class="short" id="firmname" placeholder="公司名称" />
+                    <input type="text" class="short" id="clueclientphone" placeholder="客户电话" />
+                    <input type="text" class="short" id="cluetitle" placeholder="项目主题" />
+                	<input type="text" class="short" id="cluebelonganame" placeholder="隶属人" />
+                    <input type="text" class="short" id="clueaname" placeholder="创建人" />
+                    <input type="text" id="startcluecreatetime" placeholder="创建开始时间" class="mid" onclick="WdatePicker()" />
+                    <input type="text" id="endcluecreatetime" placeholder="创建结束时间" class="mid" onclick="WdatePicker()" />
+					<select id="firmfrom" class="short">
+						<option value=''>请下拉选择</option>
+						<option value='1'>400电话</option>
+						<option value='2'>QQ</option>
+						<option value='3'>老的CRM系统</option>
+						<option value='4'>自筹客户</option>
+						<option value='1000'>其他</option>
+					</select>
+					<input type="button" class="btnenter" onclick="dosrch();" />
+                    <input type="button" class="btnreset" />
+					<a id="type1" onclick="donodatesrch(1);">缺少里程碑</a>
+					<a id="type1" onclick="donodatesrch(1);">缺少里程碑</a>
+				</form>
+			</summary>
+			<!-- layout 1 -->
+			<div class="flexul">
+				<ul>
+					<h3>
+						<a href="#">
+							商务
+						</a>
+						<a href="#">
+							<span>更多</span>
+						</a>
+					</h3>
+					<li>
+						<p><a data-url="iframe.html">售前申请</a></p>
+						<p><a data-url="iframe.html">售前申请</a></p>
+						<p><a data-url="iframe.html">售前申请</a></p>
+					</li>
+				</ul>
+				<ul>
+					<h3>
+						项目
+					</h3>
+					<li>
+						<p><a data-url="iframe2.html">一次立项</a></p>
+						<p><a data-url="iframe2.html">一次立项</a></p>
+						<p><a data-url="iframe2.html">一次立项</a></p>
+						<p><a data-url="iframe2.html">一次立项</a></p>
+						<p><a data-url="iframe2.html">一次立项</a></p>
+						<p><a data-url="iframe2.html">一次立项</a></p>
+					</li>
+				</ul>
+				<ul>
+					<h3>
+						外协
+					</h3>
+					<li>
+						<p><a data-url="iframe.html">合同申请</a></p>
+						<p><a data-url="iframe.html">合同申请</a></p>
+						<p><a data-url="iframe.html">合同申请</a></p>
+						<p><a data-url="iframe.html">合同申请</a></p>
+					</li>
+				</ul>
+				<ul>
+					<h3>
+						申请
+					</h3>
+					<li>
+						<p><a data-url="iframe.html">售前申请</a></p>
+						<p><a data-url="iframe.html">售前申请</a></p>
+						<p><a data-url="iframe.html">售前申请</a></p>
+						<p><a data-url="iframe.html">售前申请</a></p>
+					</li>
+				</ul>
+				<ul>
+					<h3>
+						报销
+					</h3>
+					<li>
+						<p><a data-url="iframe.html">开票申请</a></p>
+						<p><a data-url="iframe.html">开票申请</a></p>
+						<p><a data-url="iframe.html">开票申请</a></p>
+						<p><a data-url="iframe.html">开票申请</a></p>
+						<p><a data-url="iframe.html">开票申请</a></p>
+						<p><a data-url="iframe.html">开票申请</a></p>
+					</li>
+				</ul>
+				<ul>
+					<h3>
+						采购
+					</h3>
+					<li>
+						<p><a data-url="iframe.html">开票申请</a></p>
+						<p><a data-url="iframe.html">开票申请</a></p>
+						<p><a data-url="iframe.html">开票申请</a></p>
+						<p><a data-url="iframe.html">开票申请</a></p>
+					</li>
+				</ul>
+			</div>
+			<!-- layout 2 -->
+			<div class="datalisttable">
+				<table cellspacing="0" cellpadding="0">
+					<caption>合同统计表</caption>
+					<tbody>
+						<tr>
+							<td>
+								<span data-title="合同编号">kj201613379</span>
+								<span data-title="项目名称" data-flex="2">
+									<a data-url="/index.php/contract/view/id/1387">美丽田园（微信H5+Server）</a>
+								</span>
+								<span data-title="公司名称" data-flex="3">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="公司名称" data-flex="3">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="签约地区">上海</span>
+								<span data-title="签约部门">蚂蚁</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="操作">
+									<a data-url="/index.php/project/addmilestone/id/1387">里</a>
+									<a data-url="/index.php/contract/edit/id/1387">编</a>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span data-title="合同编号">kj201613379</span>
+								<span data-title="项目名称">
+									<a data-url="/index.php/contract/view/id/1387">美丽田园（微信H5+Server）</a>
+								</span>
+								<span data-title="公司名称" data-flex="2">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="公司名称" data-flex="3">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="签约地区">上海</span>
+								<span data-title="签约部门">蚂蚁</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="操作">
+									<a data-url="/index.php/project/addmilestone/id/1387">里</a>
+									<a data-url="/index.php/contract/edit/id/1387">编</a>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span data-title="合同编号">kj201613379</span>
+								<span data-title="项目名称">
+									<a data-url="/index.php/contract/view/id/1387">美丽田园（微信H5+Server）</a>
+								</span>
+								<span data-title="公司名称" data-flex="2">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="公司名称" data-flex="3">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="签约地区">上海</span>
+								<span data-title="签约部门">蚂蚁</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="操作">
+									<a data-url="/index.php/project/addmilestone/id/1387">里</a>
+									<a data-url="/index.php/contract/edit/id/1387">编</a>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table cellspacing="0" cellpadding="0">
+					<caption>签约统计表</caption>
+					<tbody>
+						<tr>
+							<td>
+								<span data-title="合同编号">kj201613379</span>
+								<span data-title="项目名称" data-flex="2">
+									<a data-url="/index.php/contract/view/id/1387">美丽田园（微信H5+Server）</a>
+								</span>
+								<span data-title="公司名称" data-flex="2">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="签约地区">上海</span>
+								<span data-title="签约部门">蚂蚁</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="合同金额">￥26,000.00</span>
+								<span data-title="开发平台">WeChat/Server</span>
+								<span data-title="签订日期">2016/05/06</span>
+								<span data-title="交付日期">2016/05/20</span>
+								<span data-title="合同已回">是</span>
+								<span data-title="操作">
+									<a data-url="/index.php/project/addmilestone/id/1387">里</a>
+									<a data-url="/index.php/contract/edit/id/1387">编</a>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span data-title="合同编号">kj201613379</span>
+								<span data-title="项目名称">
+									<a data-url="/index.php/contract/view/id/1387">美丽田园（微信H5+Server）</a>
+								</span>
+								<span data-title="公司名称">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="签约地区">上海</span>
+								<span data-title="签约部门">蚂蚁</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="合同金额">￥26,000.00</span>
+								<span data-title="开发平台">WeChat/Server</span>
+								<span data-title="签订日期">2016/05/06</span>
+								<span data-title="交付日期">2016/05/20</span>
+								<span data-title="合同已回">是</span>
+								<span data-title="操作">
+									<a data-url="/index.php/project/addmilestone/id/1387">里</a>
+									<a data-url="/index.php/contract/edit/id/1387">编</a>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span data-title="合同编号">kj201613379</span>
+								<span data-title="项目名称">
+									<a data-url="/index.php/contract/view/id/1387">美丽田园（微信H5+Server）</a>
+								</span>
+								<span data-title="公司名称">
+									海南美丽田园管理服务有限公司上海分公司
+								</span>
+								<span data-title="签约地区">上海</span>
+								<span data-title="签约部门">蚂蚁</span>
+								<span data-title="销售姓名">夏子唯</span>
+								<span data-title="合同金额">￥26,000.00</span>
+								<span data-title="开发平台">WeChat/Server</span>
+								<span data-title="签订日期">2016/05/06</span>
+								<span data-title="交付日期">2016/05/20</span>
+								<span data-title="合同已回">是</span>
+								<span data-title="操作">
+									<a data-url="/index.php/project/addmilestone/id/1387">里</a>
+									<a data-url="/index.php/contract/edit/id/1387">编</a>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td>
+								总计 8510 条记录&nbsp;&nbsp;<a class="selected">1</a>&nbsp;&nbsp;<a href="#2">2</a>&nbsp;&nbsp;<a href="#3">3</a>&nbsp;&nbsp;<a href="#4">4</a>&nbsp;&nbsp;<a href="#5">5</a>&nbsp;&nbsp;<a href="#6">6</a>&nbsp;&nbsp;<a href="#7">7</a>&nbsp;&nbsp;...&nbsp;&nbsp;<a href="#426">426</a>&nbsp;&nbsp;<a href="#2">下页</a>&nbsp;&nbsp;&nbsp;<input id="pagego" type="text"><input type="button" value="Go" onclick="jumptopage();"><script>function jumptopage(){var p=document.getElementById("pagego").value;window.location.href="iframe.html"+p;}</script>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</section>
+	</article>
+</div>
+
+
+</body>
+</html>

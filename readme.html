@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+html,body {
+	font-family:FondLanTingThin;
+}
+@font-face {
+    font-family:'YueHei';
+	src:url('fonts/YueHei/yuehei-webfont.eot');
+	src:url('fonts/YueHei/yuehei-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/YueHei/yuehei-webfont.woff') format('woff'),
+		url('fonts/YueHei/yuehei-webfont.ttf') format('truetype'),
+		url('fonts/YueHei/yuehei-webfont.svg#YueHei') format('svg');
+    font-weight:700;
+    font-style:normal;
+}
+@font-face {
+    font-family:'FondLanTingThin';
+    src:url('fonts/FondLanTingThin/FondLanTingThin.otf') format('otf'),
+        url('fonts/FondLanTingThin/FondLanTingThin.woff') format('woff'),
+        url('fonts/FondLanTingThin/FondLanTingThin.ttf') format('truetype'),
+		local("Microsoft YaHei"),local("SimHei");
+    font-weight:normal;
+    font-style:normal;
+}
+cite {
+	color:rgba(255,0,0,1);
+}
+cite:before {
+	content: '注释：';
+}
+</style>
+</head>
+
+<body>
+
+<pre>
+框架开始
+	&lt;aside&gt;
+		<cite>框架左侧菜单</cite>
+	&lt;/aside&gt;
+	&lt;div id="main"&gt;
+		<cite>框架主体内容</cite>
+	&lt;/div&gt;
+框架结束
+</pre>
+
+<pre>
+框架左侧菜单
+	&lt;aside&gt;
+		&lt;section&gt;
+			&lt;ul&gt;
+				&lt;li&gt;
+					<cite>here is content...</cite>
+				&lt;li&gt;
+			&lt;ul&gt;
+		&lt;/section&gt;
+	&lt;/aside&gt;
+</pre>
+
+<pre>
+框架左侧菜单 &gt; logo
+&lt;aside&gt;
+	&lt;section&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;figure&gt;
+					&lt;img src="images/logo.png" /&gt;
+					&lt;figcaption&gt;
+						科匠中国信息管理系统 V2.0
+					&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/section&gt;
+&lt;/aside&gt;
+</pre>
+
+<pre>
+框架左侧菜单 &gt; logo && 框架左侧菜单 &gt; 主体菜单
+&lt;aside&gt;
+	&lt;section&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;figure&gt;
+				&lt;img src="images/logo.png" /&gt;
+				&lt;figcaption&gt;
+					科匠中国信息管理系统 V2.0
+				&lt;/figcaption&gt;
+				&lt;/figure&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;hgroup&gt;
+					&lt;h3 data-name="database"&gt;<cite>data-name 父菜单</cite>
+						&lt;i class="fa fa-database"&gt;&lt;/i&gt;<cite>font awesome</cite>
+						经营分析系统
+						&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+					&lt;/h3&gt;
+					&lt;h4 data-name="database_101"&gt;<cite>data-name 子菜单</cite>
+						&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+						逾期未联系
+					&lt;/h4&gt;
+					&lt;h4 data-name="database_102"&gt;
+						&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+						成本统计
+					&lt;/h4&gt;
+					&lt;h4 data-name="database_103"&gt;
+						&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;
+						事业部业绩统计
+					&lt;/h4&gt;
+				&lt;/hgroup&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/sectin&gt;
+&lt;/aside&gt;
+</pre>
+
+<pre>
+框架主体
+&lt;div id="main"&gt;
+	<cite>顶部功能栏</cite>
+	&lt;header&gt;
+		&lt;section&gt;
+		&lt;/section&gt;
+	&lt;/header&gt;
+	<cite>主体内容显示区域</cite>
+	&lt;article&gt;
+		&lt;section&gt;
+		&lt;/section&gt;
+	&lt;/article&gt;
+&lt;/div&gt;
+</pre>
+
+<pre>
+框架主体
+&lt;div id="main"&gt;
+	<cite>顶部功能栏</cite>
+	&lt;header&gt;
+		&lt;section&gt;
+			&lt;ul&gt;
+				&lt;li&gt;
+					&lt;i class="fa fa-bars"&gt;&lt;/i&gt;<cite>控制左侧菜单显示隐藏</cite>
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;div&gt;
+						互联网+环保新时代 给你的旧手机找一个新家<cite>滚动新闻</cite>
+					&lt;/div&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;i class="fa fa-bell"&gt;
+						&lt;sup&gt;8&lt;/sup&gt;<cite>通知类</cite>
+					&lt;/i&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;i class="fa fa-envelope"&gt;
+						&lt;sup&gt;18&lt;/sup&gt;<cite>通知类</cite>
+					&lt;/i&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;i class="fa fa-tasks"&gt;
+						&lt;sup&gt;9+&lt;/sup&gt;<cite>通知类</cite>
+					&lt;/i&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;i class="fa fa-power-off"&gt;&lt;/i&gt;<cite>退出</cite>
+				&lt;/li&gt;
+				&lt;div class="clear"&gt;&lt;/div&gt;
+			&lt;/ul&gt;
+	&lt;/header&gt;
+</pre>
+
+<pre>
+框架主体
+&lt;div id="main"&gt;
+	<cite>主体内容显示区域-1</cite>
+	&lt;article&gt;
+		&lt;section&gt;
+			&lt;summary&gt;
+				&lt;p&gt;
+					here is tips...<cite>提示语区域</cite>
+				&lt;/p&gt;
+				&lt;form&gt;<cite>搜索功能区域</cite>
+					&lt;input type="text" class="short" id="firmname" placeholder="公司名称" /&gt;
+					&lt;input type="text" class="mid" id="clueclientphone" placeholder="客户电话" /&gt;
+					&lt;input type="text" class="" id="cluetitle" placeholder="项目主题" /&gt;
+					&lt;input type="text" id="startcluecreatetime" placeholder="创建开始时间" class="mid" onclick="WdatePicker()" /&gt;
+					&lt;input type="text" id="endcluecreatetime" placeholder="创建结束时间" class="mid" onclick="WdatePicker()" /&gt;
+					&lt;select id="firmfrom" class="short"&gt;
+						&lt;option value=""&gt;请下拉选择&lt;/option&gt;
+						&lt;optgroup label="公司来源"&gt;&lt;/optgroup&gt;
+						&lt;option value=""&gt;选择客户来源&lt;/option&gt;
+						&lt;option value='1'&gt;400电话&lt;/option&gt;
+						&lt;option value='2'&gt;QQ&lt;/option&gt;
+						&lt;option value='3'&gt;老的CRM系统&lt;/option&gt;
+						&lt;optgroup label="其他来源"&gt;&lt;/optgroup&gt;
+						&lt;option value='4'&gt;自筹客户&lt;/option&gt;
+						&lt;option value='1000'&gt;其他&lt;/option&gt;
+					&lt;/select&gt;
+					&lt;input type="button" class="btnenter" onclick="dosrch();" /&gt;<cite>拼接查询条件</cite>
+					&lt;input type="button" class="btnreset" /&gt;
+					&lt;input type="submit" value="重置" /&gt;
+					&lt;a id="type1" onclick="donodatesrch(1);"&gt;缺少里程碑&lt;/a&gt;<cite>单独查询，可高亮显示</cite>
+				&lt;/form&gt;
+			&lt;/summary&gt;
+		&lt;/section&gt;
+	&lt;/article&gt;
+&lt;/div&gt;
+</pre>
+
+<pre>
+框架主体
+&lt;div id="main"&gt;
+	<cite>主体内容显示区域-2</cite>
+	&lt;article&gt;
+		&lt;section&gt;
+			&lt;div class="flexul"&gt;<cite>layout 1</cite>
+				&lt;ul&gt;<cite>loop start</cite>
+					&lt;h3&gt;
+						&lt;a href="#"&gt;
+							商务
+						&lt;/a&gt;
+						&lt;a href="#"&gt;
+							&lt;span&gt;更多&lt;/span&gt;
+						&lt;/a&gt;
+					&lt;/h3&gt;
+					&lt;li&gt;
+						&lt;p&gt;&lt;a href="#"&gt;售前申请&lt;/a&gt;&lt;/p&gt;<cite>subloop</cite>
+						&lt;p&gt;&lt;a href="#"&gt;售前申请&lt;/a&gt;&lt;/p&gt;
+						&lt;p&gt;&lt;a href="#"&gt;售前申请&lt;/a&gt;&lt;/p&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;div class="datalisttable"&gt;<cite>layout 2 special for table</cite>
+				&lt;table cellspacing="0" cellpadding="0"&gt;<cite>structure 1</cite>
+					&lt;caption&gt;合同统计表&lt;/caption&gt;<cite>structure 2 表头，not necessary</cite>
+					&lt;tbody&gt;<cite>structure 3</cite>
+						&lt;tr&gt;<cite>structure 4 loop start</cite>
+							&lt;td&gt;<cite>structure 5</cite>
+								&lt;span data-title="合同编号"&gt;kj201613379&lt;/span&gt;<cite>structure 6</cite>
+								&lt;span data-title="项目名称" data-flex="2"&gt;<cite>structure 6 data-title：表头，structure 6 data-flex：表格宽度，不填写默认为1</cite>
+									&lt;a data-url="/index.php/contract/view/id/1387"&gt;美丽田园（微信H5+Server）&lt;/a&gt;<cite>structure 7 data-url：框架地址</cite>
+								&lt;/span&gt;
+								&lt;span data-title="公司名称" data-flex="3"&gt;
+									海南美丽田园管理服务有限公司上海分公司
+								&lt;/span&gt;
+								&lt;span data-title="公司名称" data-flex="3"&gt;
+									海南美丽田园管理服务有限公司上海分公司
+								&lt;/span&gt;
+								&lt;span data-title="签约地区"&gt;上海&lt;/span&gt;
+								&lt;span data-title="签约部门"&gt;蚂蚁&lt;/span&gt;
+								&lt;span data-title="销售姓名"&gt;夏子唯&lt;/span&gt;
+								&lt;span data-title="销售姓名"&gt;夏子唯&lt;/span&gt;
+								&lt;span data-title="操作"&gt;
+									&lt;a name="/index.php/project/addmilestone/id/1387"&gt;里&lt;/a&gt;
+									&lt;a name="/index.php/contract/edit/id/1387"&gt;编&lt;/a&gt;
+								&lt;/span&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;<cite>loop end</cite>
+					&lt;/tbody&gt;
+				&lt;/table&gt;
+				&lt;table cellspacing="0" cellpadding="0"&gt;
+					&lt;caption&gt;签约统计表&lt;/caption&gt;
+					&lt;tbody&gt;
+						&lt;tr&gt;
+							&lt;td&gt;
+								&lt;span data-title="合同编号"&gt;kj201613379&lt;/span&gt;
+								&lt;span data-title="项目名称" data-flex="2"&gt;
+									&lt;a name="/index.php/contract/view/id/1387"&gt;美丽田园（微信H5+Server）&lt;/a&gt;
+								&lt;/span&gt;
+								&lt;span data-title="公司名称" data-flex="2"&gt;
+									海南美丽田园管理服务有限公司上海分公司
+								&lt;/span&gt;
+								&lt;span data-title="签约地区"&gt;上海&lt;/span&gt;
+								&lt;span data-title="签约部门"&gt;蚂蚁&lt;/span&gt;
+								&lt;span data-title="销售姓名"&gt;夏子唯&lt;/span&gt;
+								&lt;span data-title="合同金额"&gt;￥26,000.00&lt;/span&gt;
+								&lt;span data-title="开发平台"&gt;WeChat/Server&nbsp;&lt;/span&gt;
+								&lt;span data-title="签订日期"&gt;2016/05/06&lt;/span&gt;
+								&lt;span data-title="交付日期"&gt;2016/05/20&lt;/span&gt;
+								&lt;span data-title="合同已回"&gt;是&lt;/span&gt;
+								&lt;span data-title="操作"&gt;
+									&lt;a name="/index.php/project/addmilestone/id/1387"&gt;里&lt;/a&gt;
+									&lt;a name="/index.php/contract/edit/id/1387"&gt;编&lt;/a&gt;
+								&lt;/span&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/tbody&gt;
+					&lt;tfoot&gt;<cite>structure 8：表尾，not necessary</cite>
+						&lt;tr&gt;
+							&lt;td&gt;<cite>分页</cite>
+								总计 8510 条记录&nbsp;&nbsp;&lt;a class="selected"&gt;1&lt;/a&gt;&nbsp;&nbsp;&lt;a href="#2"&gt;2&lt;/a&gt;&nbsp;&nbsp;&lt;a href="#3"&gt;3&lt;/a&gt;&nbsp;&nbsp;&lt;a href="#4"&gt;4&lt;/a&gt;&nbsp;&nbsp;&lt;a href="#5"&gt;5&lt;/a&gt;&nbsp;&nbsp;&lt;a href="#6"&gt;6&lt;/a&gt;&nbsp;&nbsp;&lt;a href="#7"&gt;7&lt;/a&gt;&nbsp;&nbsp;...&nbsp;&nbsp;&lt;a href="#426"&gt;426&lt;/a&gt;&nbsp;&nbsp;&lt;a href="#2"&gt;下页&lt;/a&gt;&nbsp;&nbsp;&nbsp;&lt;input id="pagego" type="text"&gt;&lt;input type="button" value="Go" onclick="jumptopage();"&gt;&lt;script&gt;function jumptopage(){var p=document.getElementById("pagego").value;window.location.href="#"+p;}&lt;/script&gt;
+							&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/tfoot&gt;
+				&lt;/table&gt;
+			&lt;/div&gt;
+		&lt;/section&gt;
+	&lt;/article&gt;
+&lt;/div&gt;
+</pre>
+
+<pre>==================================================</pre>
+
+<pre>
+&lt;article&gt;
+	&lt;section&gt;
+		&lt;nav&gt;<cite>菜单切换</cite>
+			&lt;span&gt;MenuA&lt;/span&gt;
+			&lt;span&gt;MenuB&lt;/span&gt;
+			&lt;span&gt;MenuC&lt;/span&gt;
+		&lt;/nav&gt;
+		&lt;table cellspacing="0" cellpadding="0"&gt;<cite>对应表格</cite>
+			&lt;form action="message.html"&gt;
+				&lt;tbody&gt;
+					&lt;tr&gt;
+						&lt;td&gt;
+							&lt;span&gt;项目名称&lt;/span&gt;
+							&lt;span data-flex="5"&gt;
+								&lt;p&gt;未来科技&lt;/p&gt;<cite>正常文字</cite>
+							&lt;/span&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;
+							&lt;span&gt;
+								&lt;select data-title="项目主负责"&gt;<cite>下拉选项</cite>
+									&lt;option&gt;请下拉选择部门1&lt;/optgroup&gt;
+									&lt;optgroup label="A"&gt;&lt;/optgroup&gt;
+										&lt;option&gt;A-1&lt;/option&gt;
+										&lt;option&gt;A-2&lt;/option&gt;
+										&lt;option&gt;A-3&lt;/option&gt;
+									&lt;optgroup label="B"&gt;&lt;/optgroup&gt;
+										&lt;option&gt;B-1&lt;/option&gt;
+										&lt;option&gt;B-2&lt;/option&gt;
+									&lt;optgroup label="C"&gt;&lt;/optgroup&gt;
+										&lt;option&gt;C-1&lt;/option&gt;
+								&lt;/select&gt;
+								&lt;input type="text" class="short" placeholder="填写百分比" /&gt;<cite>文本输入框</cite>
+								&lt;p&gt;%&lt;/p&gt;
+								&lt;input type="text" class="short" placeholder="填写金额" /&gt;
+								&lt;p&gt;元&lt;/p&gt;
+								&lt;input type="radio" name="charge" id="charge1" /&gt;<cite>单选</cite>
+								&lt;label for="charge1"&gt;项目主负责&lt;/label&gt;
+							&lt;/span&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;
+							&lt;span&gt;
+								分配比例详细说明：
+							&lt;/span&gt;
+							&lt;span data-flex="4"&gt;
+								&lt;textarea&gt;&lt;/textarea&gt;<cite>文本域</cite>
+							&lt;/span&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;
+							&lt;span&gt;
+								&lt;label for="chk1"&gt;
+									&lt;input type="checkbox" id="chk1" /&gt;
+									本委托单须在客户合同签署前签订，未签订本委托单的合同无法申请合同审批流程。<cite>label标签</cite>
+								&lt;/labe&gt;
+							&lt;/span&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;
+							&lt;span&gt;
+								&lt;label&gt;请上传合同：&lt;/label&gt;
+								&lt;label for="xFile1" class="uploadfile"&gt;上传文件&lt;/label&gt;<cite>文件域</cite>
+								&lt;input type="file" id="xFile1" /&gt;
+								&lt;em&gt;格式要求：zip/rar&lt;/em&gt;
+								&lt;small&gt;&lt;/small&gt;
+							&lt;/span&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;
+							&lt;span&gt;
+								&lt;input type="submit" value="提交" /&gt;<cite>提交</cite>
+							&lt;/span&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/tbody&gt;
+			&lt;/form&gt;
+		&lt;/table&gt;
+		&lt;table cellspacing="0" cellpadding="0"&gt;<cite>隐藏模块</cite>
+			&lt;tbody&gt;
+				&lt;tr&gt;
+					&lt;td&gt;
+						&lt;span data-title="审批步骤"&gt;02&lt;/span&gt;
+						&lt;span data-title="审核部门" data-flex="2"&gt;烽火事业部&lt;/span&gt;
+						&lt;span data-title="承接人" data-flex="2"&gt;张甲鱼&lt;/span&gt;
+						&lt;span data-title="审核申请时间" data-flex="2"&gt;2016-04-03&lt;/span&gt;
+						&lt;span data-title="审核完成时间" data-flex="2"&gt;2016-04-04&lt;/span&gt;
+						&lt;span data-title="审核状态"&gt;已完成&lt;/span&gt;
+						&lt;span data-title="操作"&gt;
+							&lt;a data-url="iframe.html"&gt;通过&lt;/a&gt;
+							&lt;a data-url="iframe.html"&gt;拒绝&lt;/a&gt;
+						&lt;/span&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+		&lt;table cellspacing="0" cellpadding="0"&gt;<cite>隐藏模块</cite>
+			&lt;tbody&gt;
+				&lt;tr&gt;
+					&lt;td&gt;
+						&lt;span data-title="审批步骤"&gt;03&lt;/span&gt;
+						&lt;span data-title="审核部门" data-flex="2"&gt;烽火事业部&lt;/span&gt;
+						&lt;span data-title="承接人" data-flex="2"&gt;张甲鱼&lt;/span&gt;
+						&lt;span data-title="审核申请时间" data-flex="2"&gt;2016-04-03&lt;/span&gt;
+						&lt;span data-title="审核完成时间" data-flex="2"&gt;2016-04-04&lt;/span&gt;
+						&lt;span data-title="审核状态"&gt;已完成&lt;/span&gt;
+						&lt;span data-title="操作"&gt;
+							&lt;a data-url="iframe.html"&gt;通过&lt;/a&gt;
+							&lt;a data-url="iframe.html"&gt;拒绝&lt;/a&gt;
+						&lt;/span&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+	&lt;/section&gt;
+&lt;/article&gt;
+</pre>
+
+<pre>
+&lt;article class="datalisttable"&gt;<cite>审批表格，需要切换展现形式，加class="datalisttable"</cite>
+	&lt;section&gt;
+		&lt;h3&gt;合同审批流程（项目超售）---&lt;/h3&gt;
+		&lt;table cellspacing="0" cellpadding="0" class="approvaltable"&gt;<cite>审批表格，加class="approvaltable"</cite>
+			&lt;tbody&gt;
+				&lt;tr&gt;
+					&lt;td&gt;
+						&lt;span data-title="审批步骤"&gt;01&lt;/span&gt;
+						&lt;span data-title="审核部门" data-flex="2"&gt;烽火事业部&lt;/span&gt;
+						&lt;span data-title="承接人" data-flex="2"&gt;张甲鱼&lt;/span&gt;
+						&lt;span data-title="审核申请时间" data-flex="2"&gt;2016-04-03&lt;/span&gt;
+						&lt;span data-title="审核完成时间" data-flex="2"&gt;2016-04-04&lt;/span&gt;
+						&lt;span data-title="审核状态"&gt;已完成&lt;/span&gt;
+						&lt;span data-title="审核状态"&gt;已完成&lt;/span&gt;
+						&lt;span data-title="操作"&gt;
+							&lt;a data-target="#actionForm|id:2-pid:3-cid:4" data-type="oa_ok"&gt;通过&lt;/a&gt;
+							&lt;a data-target="#actionForm|aid:50-cid:45" data-type="oa_no"&gt;拒绝&lt;/a&gt;
+						&lt;/span&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td&gt;
+						&lt;span data-title="审批步骤"&gt;02&lt;/span&gt;
+						&lt;span data-title="审核部门" data-flex="2"&gt;烽火事业部&lt;/span&gt;
+						&lt;span data-title="承接人" data-flex="2"&gt;张甲鱼&lt;/span&gt;
+						&lt;span data-title="审核申请时间" data-flex="2"&gt;2016-04-03&lt;/span&gt;
+						&lt;span data-title="审核完成时间" data-flex="2"&gt;2016-04-04&lt;/span&gt;
+						&lt;span data-title="审核状态"&gt;已完成&lt;/span&gt;
+						&lt;span data-title="审核状态"&gt;已完成&lt;/span&gt;
+						&lt;span data-title="操作"&gt;<cite>重要，最后一个元素，放操作按钮</cite>
+							&lt;a data-target="#actionForm|id:2-pid:3-cid:4" data-type="oa_ok"&gt;通过&lt;/a&gt;<cite>重要，data-target对应form及参数，data-type操作类型</cite>
+							&lt;a data-target="#actionForm|aid:50-cid:45" data-type="oa_no"&gt;拒绝&lt;/a&gt;
+						&lt;/span&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+				&lt;tr&gt;
+					&lt;td class="checking"&gt;
+						&lt;span data-title="审批步骤"&gt;03&lt;/span&gt;
+						&lt;span data-title="审核部门" data-flex="2"&gt;烽火事业部&lt;/span&gt;
+						&lt;span data-title="承接人" data-flex="2"&gt;张甲鱼&lt;/span&gt;
+						&lt;span data-title="审核申请时间" data-flex="2"&gt;2016-04-03&lt;/span&gt;
+						&lt;span data-title="审核完成时间" data-flex="2"&gt;2016-04-04&lt;/span&gt;
+						&lt;span data-title="审核状态"&gt;已完成&lt;/span&gt;
+						&lt;span data-title="审核状态"&gt;已完成&lt;/span&gt;
+						&lt;span data-title="操作"&gt;
+							&lt;a data-target="#actionForm|id:2-pid:3-cid:4" data-type="oa_ok"&gt;通过&lt;/a&gt;
+							&lt;a data-target="#actionForm|aid:50-cid:45" data-type="oa_no"&gt;拒绝&lt;/a&gt;
+							&lt;a data-target="#delForm|pid:3-cid:5" data-type="oa_delete"&gt;删除&lt;/a&gt;
+						&lt;/span&gt;
+					&lt;/td&gt;
+				&lt;/tr&gt;
+			&lt;/tbody&gt;
+		&lt;/table&gt;
+	&lt;/section&gt;
+&lt;/article&gt;
+</pre>
+
+</body>
+</html>

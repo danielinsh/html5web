@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no"/>
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/media.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/float.css" />
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/DatePicker/WdatePicker.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/common.js"></script>
+<title>合同审批流程（项目超售）</title>
+<body>
+
+<article>
+	<section>
+		<nav>
+			<span>MenuA</span>
+			<span>MenuB</span>
+			<span>MenuC</span>
+		</nav>
+		<table cellspacing="0" cellpadding="0">
+			<form action="message.html">
+				<tbody>
+					<tr>
+						<td>
+							<span>项目名称</span>
+							<span data-flex="5">
+								<p>未来科技</p>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>打印合同</span>
+							<span data-flex="5">
+								<select>
+									<option>开票类型</optgroup>
+									<option>A-1</option>
+									<option>A-2</option>
+									<option>A-3</option>
+									<option>B-1</option>
+									<option>B-2</option>
+									<option>C-1</option>
+								</select>
+								<select>
+									<optgroup label="A"></optgroup>
+										<option>A-1</option>
+										<option>A-2</option>
+										<option>A-3</option>
+									<optgroup label="B"></optgroup>
+										<option>B-1</option>
+										<option>B-2</option>
+									<optgroup label="C"></optgroup>
+										<option>C-1</option>
+								</select>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>
+								<select data-title="项目主负责">
+									<option>请下拉选择部门1</optgroup>
+									<optgroup label="A"></optgroup>
+										<option>A-1</option>
+										<option>A-2</option>
+										<option>A-3</option>
+									<optgroup label="B"></optgroup>
+										<option>B-1</option>
+										<option>B-2</option>
+									<optgroup label="C"></optgroup>
+										<option>C-1</option>
+								</select>
+								<input type="text" class="short" placeholder="填写百分比" />
+								<p>%</p>
+								<input type="text" class="short" placeholder="填写金额" />
+								<p>元</p>
+								<label for="charge1">
+									<input type="radio" name="charge" id="charge1" />
+									项目主负责1
+								</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>
+								<select>
+									<option>请下拉选择部门2</optgroup>
+									<optgroup label="A"></optgroup>
+										<option>A-1</option>
+										<option>A-2</option>
+										<option>A-3</option>
+									<optgroup label="B"></optgroup>
+										<option>B-1</option>
+										<option>B-2</option>
+									<optgroup label="C"></optgroup>
+										<option>C-1</option>
+								</select>
+								<input type="text" class="short" placeholder="填写百分比" />
+								<p>%</p>
+								<input type="text" class="short" placeholder="填写金额" />
+								<p>元</p>
+								<label for="charge2">
+									<input type="radio" name="charge" id="charge2" />
+									项目主负责2
+								</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>单选按钮</span>
+							<span data-flex="5">
+								<label for="choose1">
+									<input type="radio" name="choose" id="choose1" />
+									选项1
+								</label>
+								<label for="choose2">
+									<input type="radio" name="choose" id="choose2" />
+									选项2
+								</label>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>分配比例详细说明：</span>
+							<span data-flex="5">
+								<textarea></textarea>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>
+								<label for="chk1">
+									<input type="checkbox" id="chk1" />
+									本委托单须在客户合同签署前签订，未签订本委托单的合同无法申请合同审批流程。
+								</labe>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>
+								<label for="chk2">
+									<input type="checkbox" id="chk2" />
+									接单方必须在明确需求附件及合同金额、细则等后方可完成合同及本委托单签约，一旦签约，后续项目相关所有事宜由接单方承担。
+								</labe>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>
+								<label for="chk3">
+									<input type="checkbox" id="chk3" />
+									双方财务结算将以本委托单分配比例执行，如有变更则须经业务管理中心批准。
+								</labe>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>
+								<label>请上传合同：</label>
+								<label for="xFile1" class="uploadfile">上传文件</label>
+								<input type="file" id="xFile1" />
+								<em>格式要求：zip/rar</em>
+								<small></small>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>
+								<label>请上传相关资料：</label>
+								<label for="xFile2" class="uploadfile">上传文件</label>
+								<input type="file" id="xFile2" />
+								<em>格式要求：zip/rar</em>
+								<small></small>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>
+								<input type="submit" value="提交" />
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</form>
+		</table>
+		<table cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td>
+						<span data-title="审批步骤">02</span>
+						<span data-title="审核部门" data-flex="2">烽火事业部</span>
+						<span data-title="承接人" data-flex="2">张甲鱼</span>
+						<span data-title="审核申请时间" data-flex="2">2016-04-03</span>
+						<span data-title="审核完成时间" data-flex="2">2016-04-04</span>
+						<span data-title="审核状态">已完成</span>
+						<span data-title="操作">
+							<a data-url="iframe.html">通过</a>
+							<a data-url="iframe.html">拒绝</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table cellspacing="0" cellpadding="0">
+			<tbody>
+				<tr>
+					<td>
+						<span data-title="审批步骤">03</span>
+						<span data-title="审核部门" data-flex="2">烽火事业部</span>
+						<span data-title="承接人" data-flex="2">张甲鱼</span>
+						<span data-title="审核申请时间" data-flex="2">2016-04-03</span>
+						<span data-title="审核完成时间" data-flex="2">2016-04-04</span>
+						<span data-title="审核状态">已完成</span>
+						<span data-title="操作">
+							<a data-url="iframe.html">通过</a>
+							<a data-url="iframe.html">拒绝</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</article>
+
+<article class="datalisttable">
+	<section>
+		<h3>合同审批流程（项目超售）---</h3>
+		<table cellspacing="0" cellpadding="0" class="approvaltable">
+			<tbody>
+				<tr>
+					<td>
+						<span data-title="审批步骤">01</span>
+						<span data-title="审核部门" data-flex="2">烽火事业部</span>
+						<span data-title="承接人" data-flex="2">张甲鱼</span>
+						<span data-title="审核申请时间" data-flex="2">2016-04-03</span>
+						<span data-title="审核完成时间" data-flex="2">2016-04-04</span>
+						<span data-title="审核状态">已完成</span>
+						<span data-title="审核状态">已完成</span>
+						<span data-title="操作" data-flex="2">
+							<a data-target="#actionForm|id:2-pid:3-cid:4" data-type="oa_ok">通过</a>
+							<a data-target="#actionForm|aid:50-cid:45" data-type="oa_no">拒绝</a>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span data-title="审批步骤">02</span>
+						<span data-title="审核部门" data-flex="2">烽火事业部</span>
+						<span data-title="承接人" data-flex="2">张甲鱼</span>
+						<span data-title="审核申请时间" data-flex="2">2016-04-03</span>
+						<span data-title="审核完成时间" data-flex="2">2016-04-04</span>
+						<span data-title="审核状态">已完成</span>
+						<span data-title="审核状态">已完成</span>
+						<span data-title="操作" data-flex="2">
+							<a data-target="#actionForm|id:2-pid:3-cid:4" data-type="oa_ok">通过</a>
+							<a data-target="#actionForm|aid:50-cid:45" data-type="oa_no">拒绝</a>
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<td class="checking">
+						<span data-title="审批步骤">03</span>
+						<span data-title="审核部门" data-flex="2">烽火事业部</span>
+						<span data-title="承接人" data-flex="2">张甲鱼</span>
+						<span data-title="审核申请时间" data-flex="2">2016-04-03</span>
+						<span data-title="审核完成时间" data-flex="2">2016-04-04</span>
+						<span data-title="审核状态">已完成</span>
+						<span data-title="审核状态">已完成</span>
+						<span data-title="操作" data-flex="2">
+							<a data-target="#actionForm|id:2-pid:3-cid:4" data-type="oa_ok">通过</a>
+							<a data-target="#actionForm|aid:50-cid:45" data-type="oa_no">拒绝</a>
+							<a data-target="#delForm|pid:3-cid:5" data-type="oa_delete">删除</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+</article>
+
+<article class="hiddenArea">
+	<section>
+		<form id="actionForm" action="msgback.html">
+			<table cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td>
+							<span>审批信息</span>
+							<span data-flex="4">
+								<p>徐亮 / 2016-05-23 13:55</p>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>审批类型</span>
+							<span data-flex="4">
+								<p>#reportForm|id:2-pid:3-cid:4 / </p>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>退回步骤</span>
+							<span data-flex="4">
+								<select name="approvalStep">
+									<option>开票类型</optgroup>
+									<option>A-1</option>
+									<option>A-2</option>
+									<option>A-3</option>
+									<option>B-1</option>
+									<option>B-2</option>
+									<option>C-1</option>
+								</select>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>审批备注</span>
+							<span data-flex="4">
+								<textarea name="approvalComment"></textarea>
+								<input type="submit" />
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<form id="delForm">
+			<table cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr>
+						<td>
+							<span>审批信息</span>
+							<span data-flex="4">
+								<p>徐亮 / 2016-05-23 13:55</p>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>审批类型</span>
+							<span data-flex="4">
+								<p>删除 / #reportForm|id:2-pid:3-cid:4 / </p>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>审批备注</span>
+							<span data-flex="4">
+								<textarea name="approvalComment"></textarea>
+								<input type="submit" />
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</section>
+</article>
+
+<!-- &emsp;&emsp;<a href="iframe2.html">iframe2</a>&emsp;&emsp;<br /><br /><br /><br />
+
+<a class="backIframe-1">backIframe</a>&emsp;&emsp;<br />
+<a class="backIframe-2">backIframeTwoSteps</a>&emsp;&emsp;<br />
+<a class="backIframe-c">closeIframe</a>&emsp;&emsp;<br />
+<a class="backIframe-r">refreshIframe</a>
+ -->
+</body>
+</htmnl>
